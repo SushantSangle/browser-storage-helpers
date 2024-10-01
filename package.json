@@ -1,6 +1,6 @@
 {
   "name": "browser-storage-helpers",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A utility package for managing cookies, localStorage, and sessionStorage with encryption and decryption support. Includes methods for securely storing, loading, and removing data using modern browser storage mechanisms.",
   "main": "index.js",
   "scripts": {
