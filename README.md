@@ -7,7 +7,7 @@
 To install the package, run the following command:
 
 ```bash
-npm install browser-storage-helpers backticks
+npm install browser-storage-helpers
 ```
 
 ## Features
