@@ -7,7 +7,7 @@
 To install the package, run the following command:
 
 ```bash
-npm install browser-storage-helpers
+npm install browser-storage-helpers backticks
 ```
 
 ## Features
@@ -22,74 +22,76 @@ Built-in helpers for easy integration with browser storage mechanisms.
 Importing the Helpers
 You can import the specific helpers as needed:
 
+```bash
 import { storeToLocalStorage, loadFromLocalStorage, clearFromLocalStorage } from 'browser-storage-helpers';
 import { storeToSessionStorage, loadFromSessionStorage, removeFromSessionStorage } from 'browser-storage-helpers';
 import { storeToCookie, loadFromCookie, clearFromCookie } from 'browser-storage-helpers';
+```
 
 
 ## LocalStorage Helper Methods
 
 storeToLocalStorage - 
 Stores encrypted data in localStorage.
-
+```bash
 storeToLocalStorage('user', { name: 'John Doe', email: 'john@example.com' });
-
+```
 
 loadFromLocalStorage - 
 Loads and decrypts data from localStorage.
-
+```bash
 const user = loadFromLocalStorage('user');
 console.log(user); # { name: 'John Doe', email: 'john@example.com' }
-
+```
 
 clearFromLocalStorage - 
 Removes the specified item from localStorage.
-
+```bash
 clearFromLocalStorage('user');
-
+```
 
 ## SessionStorage Helper Methods
 
 storeToSessionStorage - 
 Stores encrypted data in sessionStorage.
-
+```bash
 storeToSessionStorage('sessionData', { sessionId: '12345' });
-
+```
 
 loadFromSessionStorage - 
 Loads and decrypts data from sessionStorage.
-
+```bash
 const sessionData = loadFromSessionStorage('sessionData');
 console.log(sessionData); # { sessionId: '12345' }
-
+```
 
 removeFromSessionStorage - 
 Removes the specified item from sessionStorage.
-
+```bash
 removeFromSessionStorage('sessionData');
-
+```
 
 
 ## Cookie Helper Methods
 
 storeToCookie - 
 Stores encrypted data in a cookie. You can specify options like path and expiration.
-
+```bash
 storeToCookie('token', { authToken: 'abc123' }, { path: '/', maxAge: 3600 });
-
+```
 
 loadFromCookie - 
 Loads and decrypts data from a cookie.
-
+```bash
 const tokenData = loadFromCookie('token');
 console.log(tokenData); # { authToken: 'abc123' }
-
+```
 
 clearFromCookie - 
 Removes the specified cookie.
-
+```bash
 clearFromCookie('token', { path: '/' });
-
+```
 
 
 ## Encryption and Decryption
@@ -104,18 +106,24 @@ The package uses the environment variable ENCRYPTION_SECRET_KEY for encrypting a
 
 For example:
 
-## Vite.js (.env):
+## Vite.js (React, Vue) (.env):
+```bash
 VITE_APP_ENCRYPTION_SECRET_KEY=mySuperSecretKey123
-
+```
 ## React (CRA) (.env):
+```bash
 REACT_APP_ENCRYPTION_SECRET_KEY=mySuperSecretKey123
+```
 
 ## Vue.js (.env):
+```bash
 VUE_APP_ENCRYPTION_SECRET_KEY=mySuperSecretKey123
+```
 
-##Angular (environment.ts):
-
+## Angular (environment.ts):
+```bash
 export const environment = {
   production: false,
   ENCRYPTION_SECRET_KEY: 'mySuperSecretKey123'
 };
+```
