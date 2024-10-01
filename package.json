@@ -1,0 +1,23 @@
+{
+  "name": "browser-storage-helpers",
+  "version": "1.0.0",
+  "description": "A utility package for managing cookies, localStorage, and sessionStorage with encryption and decryption support. Includes methods for securely storing, loading, and removing data using modern browser storage mechanisms.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "React",
+    "Reactjs",
+    "Vuejs",
+    "Storage",
+    "Encryption",
+    "Decryption",
+    "Browser-Storage"
+  ],
+  "author": "Harshit Srivastava",
+  "license": "MIT",
+  "dependencies": {
+    "react-cookies": "^0.1.1"
+  }
+}
