@@ -1,6 +1,6 @@
 {
   "name": "browser-storage-helpers",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A utility package for managing cookies, localStorage, and sessionStorage with encryption and decryption support. Includes methods for securely storing, loading, and removing data using modern browser storage mechanisms.",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,13 @@
   "license": "MIT",
   "dependencies": {
     "react-cookies": "^0.1.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:HarshitSrivastava007/browser-storage-helpers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HarshitSrivastava007/browser-storage-helpers/issues"
+  },
+  "homepage": "https://github.com/HarshitSrivastava007/browser-storage-helpers"
 }
