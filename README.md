@@ -12,9 +12,10 @@ npm install browser-storage-helpers
 
 ## Features
 
-Securely store, load, and remove data in cookies, localStorage, and sessionStorage.
-Encrypt and decrypt stored data using XOR encryption.
-Built-in helpers for easy integration with browser storage mechanisms.
+- Securely store, load, and remove data in cookies, localStorage, and sessionStorage.
+- Encrypt and decrypt stored data using XOR encryption.
+- Built-in helpers for easy integration with browser storage mechanisms.
+- TypeScript support.
 
 
 ## Usage
